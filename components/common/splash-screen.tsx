@@ -12,7 +12,7 @@ interface SplashScreenProps {
 }
 
 const sloganWords = [
-  ["skip", "the", "maybe"],
+  ["skip", "the", "maybe -"],
   ["get", "the", "yes"],
 ];
 
@@ -29,7 +29,7 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
     const wordTimers = Array.from({ length: totalWords }, (_, index) => {
       return setTimeout(() => {
         setVisibleWords(index + 1);
-      }, index * 200); // 200ms between each word
+      }, index * 450); // 450ms between each word
     });
 
     // Transition to main splash screen after all words shown
@@ -37,7 +37,7 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
       () => {
         setShowIntro(false);
       },
-      totalWords * 200 + 1000
+      totalWords * 200 + 1400
     ); // Extra 1 second after last word
 
     return () => {
