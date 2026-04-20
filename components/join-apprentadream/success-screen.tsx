@@ -61,7 +61,7 @@ export function SuccessScreen({ referralCode }: SuccessScreenProps) {
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Welcome to Apprentadream!</h1>
           <p className="text-xl text-gray-300 mb-14">
-            You&apos;re now part of a community of 2,300+ ambitious members
+            You&apos;re now part of a community of 2603 ambitious members
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export function SuccessScreen({ referralCode }: SuccessScreenProps) {
           )}
         </div>
 
-        <p className="text-sm text-gray-400">2,235 members • Active now</p>
+        <p className="text-sm text-gray-400">2603 members • Active now</p>
       </div>
     </div>
   );
