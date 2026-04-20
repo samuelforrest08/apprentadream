@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { SplashScreen } from "@/components/common/splash-screen";
 import { ApprentaDreamForm } from "@/components/join-apprentadream/gamified-form";
-import { UniDreamForm } from "@/components/join-unidream/gamified-form";
+
 import { CompanyHubForm } from "@/components/join-company-hub/gamified-form";
 
-type FormType = "splash" | "apprentadream" | "unidream" | "company-hub";
+type FormType = "splash" | "apprentadream" | "company-hub";
 
 export default function JoinPage() {
   const [currentForm, setCurrentForm] = useState<FormType>("splash");
@@ -15,9 +15,7 @@ export default function JoinPage() {
     setCurrentForm("apprentadream");
   };
 
-  const handleStartUnidream = () => {
-    setCurrentForm("unidream");
-  };
+
 
   const handleStartCompanyHub = () => {
     setCurrentForm("company-hub");
@@ -29,18 +27,6 @@ export default function JoinPage() {
         <div className="flex min-h-screen w-full items-center justify-center px-4 py-8 md:px-6 lg:px-8">
           <div className="w-full max-w-3xl">
             <ApprentaDreamForm />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (currentForm === "unidream") {
-    return (
-      <div className="min-h-screen bg-black w-full">
-        <div className="flex min-h-screen w-full items-center justify-center px-4 py-8 md:px-6 lg:px-8">
-          <div className="w-full max-w-3xl">
-            <UniDreamForm />
           </div>
         </div>
       </div>
@@ -65,7 +51,7 @@ export default function JoinPage() {
         <div className="w-full max-w-3xl">
           <SplashScreen
             onStartApprentadream={handleStartApprentadream}
-            onStartUnidream={handleStartUnidream}
+
             onStartCompanyHub={handleStartCompanyHub}
           />
         </div>

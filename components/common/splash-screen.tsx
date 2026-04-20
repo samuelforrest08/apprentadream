@@ -3,12 +3,11 @@ import Image from "next/image";
 import { ArrowRight, Briefcase, Building2 } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 import { AvatarCircles } from "../ui/avatar-circles";
-import { Highlighter } from "../ui/highlighter";
 import Link from "next/link";
 
 interface SplashScreenProps {
   onStartApprentadream: () => void;
-  onStartUnidream: () => void;
+
   onStartCompanyHub: () => void;
 }
 
@@ -83,43 +82,38 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
 
   const avatars = [
     {
-      imageUrl: "https://avatar.iran.liara.run/public/1",
+      imageUrl: "/1avatar.webp",
     },
     {
-      imageUrl: "https://avatar.iran.liara.run/public/10",
+      imageUrl: "/2avatar.webp",
     },
     {
-      imageUrl: "https://avatar.iran.liara.run/public/59",
+      imageUrl: "/3avatar.webp",
     },
     {
-      imageUrl: "https://avatar.iran.liara.run/public/30",
+      imageUrl: "/4avatar.webp",
     },
     {
-      imageUrl: "https://avatar.iran.liara.run/public/96",
+      imageUrl: "/5avatar.webp",
     },
-    {
-      imageUrl: "https://avatar.iran.liara.run/public/50",
-    },
+    
   ];
 
   const avatars2 = [
     {
-      imageUrl: "https://avatar.iran.liara.run/public/2",
+      imageUrl: "/6avatar.webp",
     },
     {
-      imageUrl: "https://avatar.iran.liara.run/public/11",
+      imageUrl: "/7avatar.webp",
     },
     {
-      imageUrl: "https://avatar.iran.liara.run/public/69",
+      imageUrl: "/8avatar.webp",
     },
     {
-      imageUrl: "https://avatar.iran.liara.run/public/27",
+      imageUrl: "/9avatar.webp",
     },
     {
-      imageUrl: "https://avatar.iran.liara.run/public/95",
-    },
-    {
-      imageUrl: "https://avatar.iran.liara.run/public/93",
+      imageUrl: "/10avatar.webp",
     },
   ];
 
@@ -144,10 +138,7 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
 
         <div className="inline-block justify-center items-center mb-8 md:mb-16">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white">
-            Build{" "}
-            <Highlighter action="underline" color="#FF9800">
-              your future
-            </Highlighter>
+            Build your future
           </h1>
         </div>
 
@@ -176,7 +167,7 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
                       avatarUrls={avatars}
                       className="z-10 flex -space-x-3 rtl:space-x-reverse [&>a>img]:h-8 [&>a>img]:w-8"
                     />
-                    <span className="text-sm text-gray-400 mt-1">+2300 others</span>
+                    <span className="text-sm text-gray-400 mt-1">+2603 others</span>
                   </span>
                 </div>
               </div>
@@ -207,7 +198,7 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
                       avatarUrls={avatars2}
                       className="z-10 flex -space-x-3 rtl:space-x-reverse [&>a>img]:h-8 [&>a>img]:w-8"
                     />
-                    <span className="text-sm text-gray-400 mt-1">+300 others</span>
+                    <span className="text-sm text-gray-400 mt-1">+357 others</span>
                   </span>
                 </div>
               </div>

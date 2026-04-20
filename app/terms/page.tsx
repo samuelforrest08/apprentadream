@@ -121,7 +121,7 @@ export default function Terms() {
             </p>
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
               Apprentadream is the name of our website & brand, where we collect form sign-ups for
-              Unidream & Apprentadream & Company Hub WhatsApp communities.
+              Apprentadream & Company Hub WhatsApp communities.
             </p>
           </section>
 
@@ -174,7 +174,7 @@ export default function Terms() {
             </p>
             <ul className="list-disc list-inside space-y-2 text-base sm:text-lg text-gray-300 ml-4">
               <li>
-                To add you to our Global / Apprentadream / Unidream / Company Hub member mailing
+                To add you to our Global / Apprentadream / Company Hub member mailing
                 list, where appropriate.
               </li>
               <li>
@@ -358,7 +358,7 @@ export default function Terms() {
               11. Liability and User Conduct
             </h2>
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-              By joining or interacting with the Apprentadream / Unidream / Company Hub Communities,
+              By joining or interacting with the Apprentadream / Company Hub Communities,
               you agree to use the platform respectfully and lawfully. You must not submit false,
               misleading, or inappropriate information, or attempt to misuse our referral system or
               communications.
@@ -409,7 +409,7 @@ export default function Terms() {
           <section className="pt-8 border-t border-gray-800">
             <div className="border border-white/50 rounded-lg p-6">
               <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
-                By submitting this form to join the Apprentadream / Unidream / Company Hub
+                By submitting this form to join the Apprentadream / Company Hub
                 Communities, you confirm that you have read and understood these Terms & Conditions
                 and consent to Apprentadream processing your personal data as described above.
               </p>
