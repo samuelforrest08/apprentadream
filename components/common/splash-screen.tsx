@@ -96,7 +96,6 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
     {
       imageUrl: "/5avatar.webp",
     },
-    
   ];
 
   const avatars2 = [
@@ -138,7 +137,7 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
 
         <div className="inline-block justify-center items-center mb-8 md:mb-16">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white">
-            Build your future 👇
+            Build your future
           </h1>
         </div>
 
