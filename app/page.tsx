@@ -15,8 +15,6 @@ export default function JoinPage() {
     setCurrentForm("apprentadream");
   };
 
-
-
   const handleStartCompanyHub = () => {
     setCurrentForm("company-hub");
   };

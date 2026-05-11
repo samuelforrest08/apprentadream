@@ -357,7 +357,6 @@ function GamifiedFormInner({ className, ...props }: React.ComponentProps<"div">)
 
       if (response.ok) {
         console.log("Form submitted successfully!");
-        // Trigger confetti from magicui
         handleClick();
         setShowSuccess(true);
         setIsSubmitting(false);

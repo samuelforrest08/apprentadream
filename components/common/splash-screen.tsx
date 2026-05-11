@@ -47,9 +47,8 @@ export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: Splash
     },
   ];
 
-  // Main splash screen
   return (
-    <div className="flex flex-col items-center justify-center animate-in fade-in duration-700">
+    <div className="flex flex-col items-center justify-center">
       <div className="text-center px-4">
         {/* Logo */}
         <div>
