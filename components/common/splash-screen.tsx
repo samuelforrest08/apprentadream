@@ -17,69 +17,6 @@ const sloganWords = [
 ];
 
 export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: SplashScreenProps) {
-  const [showIntro, setShowIntro] = useState(true);
-  const [visibleWords, setVisibleWords] = useState<number>(0);
-
-  useEffect(() => {
-    if (!showIntro) return;
-
-    const totalWords = sloganWords.flat().length;
-
-    // Show each word with a delay
-    const wordTimers = Array.from({ length: totalWords }, (_, index) => {
-      return setTimeout(() => {
-        setVisibleWords(index + 1);
-      }, index * 450); // 450ms between each word
-    });
-
-    // Transition to main splash screen after all words shown
-    const transitionTimer = setTimeout(
-      () => {
-        setShowIntro(false);
-      },
-      totalWords * 200 + 1400
-    ); // Extra 1 second after last word
-
-    return () => {
-      wordTimers.forEach((timer) => clearTimeout(timer));
-      clearTimeout(transitionTimer);
-    };
-  }, [showIntro]);
-
-  // Animated intro screen
-  if (showIntro) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-[80vh] animate-in fade-in duration-500">
-        <div className="text-center space-y-4 px-4">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white space-y-2">
-            {sloganWords.map((line, lineIndex) => {
-              const lineStartIndex = lineIndex * 3; // 2 lines, of 3 words each
-              return (
-                <div key={lineIndex} className="block">
-                  {line.map((word, wordIndex) => {
-                    const globalIndex = lineStartIndex + wordIndex;
-                    return (
-                      <span
-                        key={wordIndex}
-                        className={`inline-block mx-2 transition-all duration-500 ${
-                          globalIndex < visibleWords
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 translate-y-4"
-                        }`}
-                      >
-                        {word}
-                      </span>
-                    );
-                  })}
-                </div>
-              );
-            })}
-          </h1>
-        </div>
-      </div>
-    );
-  }
-
   const avatars = [
     {
       imageUrl: "/1avatar.webp",
