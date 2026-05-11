@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ArrowRight, Briefcase, Building2 } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
@@ -10,11 +9,6 @@ interface SplashScreenProps {
 
   onStartCompanyHub: () => void;
 }
-
-const sloganWords = [
-  ["skip", "the", "maybe -"],
-  ["get", "the", "yes"],
-];
 
 export function SplashScreen({ onStartApprentadream, onStartCompanyHub }: SplashScreenProps) {
   const avatars = [
